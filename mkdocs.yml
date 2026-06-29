@@ -6,6 +6,8 @@ site_author: Lee Heunggi
 theme:
   name: material
   language: ko
+  icon:
+    logo: fontawesome/solid/earth-asia
   palette:
     scheme: slate
     primary: teal
