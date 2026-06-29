@@ -13,5 +13,5 @@
 
 ---
 
-*by 이흥기, 지구과학 교사*
-*(Heunggi Lee, Earth Science teacher)*
+*by 이흥기, 지구과학 바이브메이커*
+*(Heunggi Lee, Earth Science Vibe-Maker)*
