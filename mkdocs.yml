@@ -29,3 +29,12 @@ extra:
 
 nav:
   - Home: index.md
+  - ESP32 Projects:
+   - Intro: esp32/intro.md
+   - Settings: esp32/setup.md
+   - Modules:
+     - RGB_LED: esp32/sensors/rgb_led.md
+     - BME280: esp32/sensors/bme280.md
+     - (더 추가 예정): esp32/sensors/index.md
+   - ESP32 Weather Station: esp32/weather_station.md
+   - ESP32 Weather Drone: esp32/weather_drone.md
