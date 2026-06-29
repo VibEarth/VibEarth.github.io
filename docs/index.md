@@ -3,7 +3,7 @@
 </p>
 
 ## Thinking of Earth, Making about Earth🜨
-# 지구를 생각하며, 지구에 관한 것을 만듭니다🜨
+## 지구를 생각하며, 지구에 관한 것을 만듭니다🜨
 
 ---
 
