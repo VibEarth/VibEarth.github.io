@@ -1,4 +1,4 @@
-<p style="font-size: 4rem; text-align: center; margin: 2rem 0;">
+<p style="font-size: 3rem; text-align: center; margin: 2rem 0;">
     Vibe⊕Earth
 </p>
 
