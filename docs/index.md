@@ -1,9 +1,9 @@
-<p style="font-size: 4rem; text-align: center; margin: 2rem 0;">⊕</p>
-
-# Vibe Earth
+<p style="font-size: 4rem; text-align: center; margin: 2rem 0;">
+    Vibe⊕Earth
+</p>
 
 ## 지구를 생각하며, 지구를 만듭니다.
-### Thinking Earth, Making Earth.
+### Thinking of Earth, Making about Earth.
 
 ---
 
