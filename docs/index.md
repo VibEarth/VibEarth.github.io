@@ -2,19 +2,16 @@
     Vib⊕arth
 </p>
 
-## 지구를 생각하며, 지구에 관한 것을 만듭니다.
+### 지구를 생각하며, 지구에 관한 것을 만듭니다.
 ### Thinking of Earth, Making about Earth.
 
 ---
 
-생성형 AI와 대화하며 지구를 탐구하기 위한 무언가를 만드는 과정을 공유합니다.
-
----
-
-## 프로젝트
+## Projects
 
 🌡️ **ESP32 MBL 플랫폼** — 교실에서 직접 만드는 소형기상관측기
 
 ---
 
-*by 이흥기, 지구과학 교사(Heunggi Lee, Earth Science teacher)*
+*by 이흥기, 지구과학 교사*
+*(Heunggi Lee, Earth Science teacher)*
