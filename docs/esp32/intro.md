@@ -17,7 +17,7 @@ ESP32는 Espressif사의 소형 마이크로컨트롤러 칩을 활용한 개발
 | WiFi | Wi-Fi 4 (2.4GHz) | Wi-Fi 4 (2.4GHz) |
 | Bluetooth | BLE 5.0 | BLE 5.0 |
 | GPIO | 16~22개 | 45개 |
-| USB | Serial | OTG |
+| USB | USB-C(Serial) | USB-C(OTG) |
 | AI 가속 | 없음 | 벡터 확장 지원 |
 | 특징 | 저전력, 소형, 저가 | 고성능, 카메라·AI 지원 |
 | 가격대 | 3,400원~ | 9,000원~ |
