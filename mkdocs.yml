@@ -1,0 +1,26 @@
+site_name: Vibe Earth
+site_url: https://vibearth.dev
+site_description: Think Earth, Make Earth.
+site_author: Lee Heunggi
+
+theme:
+  name: material
+  language: ko
+  palette:
+    scheme: slate
+    primary: teal
+    accent: teal
+  font:
+    text: Noto Sans KR
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.top
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/VibEarth
+
+nav:
+  - 홈: index.md
