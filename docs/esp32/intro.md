@@ -14,8 +14,8 @@ ESP32는 Espressif사의 소형 마이크로컨트롤러 칩을 활용한 개발
 |------|----------|----------|
 | CPU | RISC-V 싱글코어 160MHz | Xtensa LX7 듀얼코어 240MHz |
 | RAM | 400KB SRAM | 512KB SRAM (+PSRAM 최대 8MB) |
-| WiFi | Wi-Fi 4 (2.4GHz) |
-| Bluetooth | BLE 5.0 |
+| WiFi | Wi-Fi 4 (2.4GHz) | Wi-Fi 4 (2.4GHz) |
+| Bluetooth | BLE 5.0 | BLE 5.0 |
 | GPIO | 16~22개 | 45개 |
 | USB | Serial | OTG |
 | AI 가속 | 없음 | 벡터 확장 지원 |
