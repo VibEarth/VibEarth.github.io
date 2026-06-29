@@ -1,0 +1,26 @@
+<p style="font-size: 4rem; text-align: center; margin: 2rem 0;">⊕</p>
+
+# Vibe Earth
+
+## 지구를 생각하며, 지구를 만듭니다.
+### Thinking Earth, Making Earth.
+
+---
+
+생성형 AI와 대화하며 지구스러운 무언가를 만드는 과정을 공유합니다.
+이것은 완성된 결과물이 아니라 **만들어가는 과정**입니다.
+
+---
+
+## 무엇을 만드나요?
+
+🌍 **ESP32 MBL 플랫폼** — 교실에서 직접 만드는 소형기상관측기
+
+---
+
+## Vibe Making이란?
+생성형 AI(ChatGPT, Gemini, Claude, etc.)와 대화하며 하드웨어를 직관적으로 만드는 방식.
+
+---
+
+*by 이흥기, 지구과학 교사(Heunggi Lee, Earth Science teacher)*
