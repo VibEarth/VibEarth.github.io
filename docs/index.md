@@ -2,14 +2,14 @@
     Vib⊕arth
 </p>
 
-## Thinking of Earth, Making about Earth🜨
 ## 지구를 생각하며, 지구에 관한 것을 만듭니다🜨
+Thinking of Earth, Making about Earth🜨
 
 ---
 
 ## Projects
 
-🌡️ **ESP32 MBL 프로젝트** — 교실에서 직접 만드는 소형기상관측기
+🌡️ **ESP32 프로젝트** — 교실에서 직접 만드는 소형기상관측기
 
 ---
 
