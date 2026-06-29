@@ -29,7 +29,7 @@ extra:
 
 nav:
   - Home: index.md
-  - ESP32 Projects:
+  - ESP32 Project:
     - Intro: esp32/intro.md
     # - Settings: esp32/setup.md
     # - Modules:
