@@ -1,4 +1,4 @@
-site_name: Vibe Earth
+site_name: Vib⊕arth
 site_url: https://vibearth.dev
 site_description: Think Earth, Make Earth.
 site_author: Lee Heunggi
@@ -21,6 +21,9 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/VibEarth
+    - icon: fontawesome/solid/earth-asia
+      link: https://vibearth.dev
+      name: Vibearth
 
 nav:
   - 홈: index.md
