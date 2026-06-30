@@ -33,10 +33,10 @@ nav:
     - Intro: esp32/intro.md
     - I. ESP32-C3 SuperMini:
       - Settings: esp32/c3/setup.md
-      - Modules:
-        - RGB_LED: esp32/c3/rgb_led.md
-        - BME280: esp32/c3/bme280.md
-      - Weather Station: esp32/c3/weather_station.md
+      # - Modules:
+      #   - RGB_LED: esp32/c3/rgb_led.md
+      #   - BME280: esp32/c3/bme280.md
+      # - Weather Station: esp32/c3/weather_station.md
     # - II. XIAO ESP32-S3:
     #   - Settings: esp32/s3/setup.md
     #   - Weather Drone: esp32/s3/weather_drone.md
