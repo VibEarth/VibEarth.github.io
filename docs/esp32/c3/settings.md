@@ -1,8 +1,10 @@
-# ESP32 Project - Supermini C3 - Settings
+# ESP32 Project - Supermini C3 - Vibe for Settings
 
 ## Supermini C3 설정을 위한 바이브🜨
 
-이번에는 ESP32-C3 Supermini 보드 설정을 위한 바이브입니다.
+>IT, 코딩 관련 책이나 블로그 등을 볼 때, 가장 빠르게 넘기는 부분이 설정부분이 아닐까 싶습니다.
+>불과 몇년 전, 코딩국내외 IT 질의응답 사이트를  생성형 AI의 도움을 받으면 기본 설정을 손쉽게 따라할 수 있고, 
+
 VibEarth 답게 AI를 통해 얻을 수 있는 기본적인 설정방법은 간단히 넘어가고
 주요한 포인트 위주로 공유하고자 합니다.
 
