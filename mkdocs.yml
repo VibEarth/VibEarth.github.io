@@ -31,10 +31,12 @@ nav:
   - Home: index.md
   - ESP32 Project:
     - Intro: esp32/intro.md
-    # - Settings: esp32/setup.md
-    # - Modules:
-    #   - RGB_LED: esp32/sensors/rgb_led.md
-    #   - BME280: esp32/sensors/bme280.md
-    #   - (더 추가 예정): esp32/sensors/index.md
-    # - ESP32 Weather Station: esp32/weather_station.md
-    # - ESP32 Weather Drone: esp32/weather_drone.md
+    - I. ESP32-C3 SuperMini:
+      - Settings: esp32/c3/setup.md
+      # - Modules:
+      #   - RGB_LED: esp32/c3/rgb_led.md
+      #   - BME280: esp32/c3/bme280.md
+      # - Weather Station: esp32/c3/weather_station.md
+    # - II. XIAO ESP32-S3:
+    #   - Settings: esp32/s3/setup.md
+    #   - Weather Drone: esp32/s3/weather_drone.md
