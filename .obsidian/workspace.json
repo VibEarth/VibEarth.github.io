@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "61ab3eaa72bdf8a7",
@@ -162,7 +163,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,7 +181,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4d242a23d8a4ce6",
+  "active": "8c49bb52121f94df",
   "lastOpenFiles": [
     "README.md",
     "docs/index.md"
