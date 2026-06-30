@@ -1,4 +1,4 @@
-# ESP32 프로젝트 - Intro
+# ESP32 Project - Intro
 
 ## ESP32. Tiny, but Powerful🜨
 
