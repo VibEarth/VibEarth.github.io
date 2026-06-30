@@ -1,6 +1,6 @@
-# ESP32 Project - C3 Supermini - Vibe for Settings
+# ESP32 Project - C3 SuperMini - Vibe for Settings
 
-## C3 Supermini 설정을 위한 바이브🜨
+## C3 SuperMini 설정을 위한 바이브🜨
 
 >요즘 IT, 코딩 관련 책이나 블로그 등을 볼 때, 가장 빠르게 넘기는 부분이 설정 부분이 아닐까 싶습니다.
 >최근에는 생성형 AI의 도움을 받으면 기본 설정을 손쉽게 따라할 수 있고, 시간을 조금만 들이면 트러블 슈팅도 충분히 할 수 있기 때문입니다.
@@ -69,12 +69,12 @@ SuperMini C3에는 작은 버튼 두 개가 있습니다 — BOOT와 RESET
 
 ---
 
-## 5. C3 SuperMini / 확장보드 핀아웃 미리 훑어보기
+## 5. C3 SuperMini 데이터시트 / 확장보드 핀아웃 훑어보기
 
 앞으로 계속 보게 될 핀맵이니 지금 미리 한 번 익혀두면 나중에 편합니다.
 
-- [ESP32-C3 SuperMini 핀아웃](https://dl.artronshop.co.th/ESP32-C3%20SuperMini%20datasheet.pdf)
-- [C3 확장 개발보드 핀아웃](#)
+- [ESP32-C3 SuperMini 데이터시트](https://dl.artronshop.co.th/ESP32-C3%20SuperMini%20datasheet.pdf)
+- [C3 SuperMini 확장 개발보드](https://michiel.vanderwulp.be/domotica/Modules/ESP32-C3-SuperMini/#expansion-board-1)
 
 특히 주의할 핀:
 
