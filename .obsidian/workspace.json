@@ -163,7 +163,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -181,7 +181,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8c49bb52121f94df",
+  "active": "50273b871bce0d85",
   "lastOpenFiles": [
     "README.md",
     "docs/index.md"
