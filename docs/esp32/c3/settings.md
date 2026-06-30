@@ -73,13 +73,14 @@ SuperMini C3에는 작은 버튼 두 개가 있습니다 — BOOT와 RESET
 
 앞으로 계속 보게 될 핀맵이니 지금 미리 한 번 익혀두면 나중에 편합니다.
 
-- [ESP32-C3 SuperMini 데이터시트](https://dl.artronshop.co.th/ESP32-C3%20SuperMini%20datasheet.pdf)
+- [ESP32-C3 SuperMini 데이터시트, 핀아웃](https://dl.artronshop.co.th/ESP32-C3%20SuperMini%20datasheet.pdf)
 - [C3 SuperMini 확장 개발보드](https://michiel.vanderwulp.be/domotica/Modules/ESP32-C3-SuperMini/#expansion-board-1)
 
 특히 주의할 핀:
-
-- GPIO8, 9: 스트래핑 핀 — I2C SDA/SCL로 사용할 수 없습니다.
+- GPIO8, 9: 스트래핑 핀 — I2C SDA/SCL로 사용할 수 없습니다. (나중에 다시 확인하겠습니다.)
 - USB 관련 핀은 별도 용도로 예약된 경우가 많습니다.
+
+>데이터시트, 핀아웃을 모두 이해하고 있을 필요는 없습니다. "보드에 대한 부품과 회로가 잘 정리된 문서가 있구나" 정도만 생각하시고 나중에 AI에게 링크 주고 필요한 정보 알려달라고 하면 잘 정리해줍니다.
 
 ---
 
