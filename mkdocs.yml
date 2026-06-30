@@ -26,6 +26,9 @@ extra:
     - icon: fontawesome/solid/earth-asia
       link: https://vibearth.dev
       name: Vibearth
+  analytics:
+    provider: google
+    property: G-CEZKH5YMXY
 
 nav:
   - Home: index.md
