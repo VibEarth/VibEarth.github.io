@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "intro"
             }
+          },
+          {
+            "id": "26a83ac1ca215114",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/esp32/Vibe-settings.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Vibe-settings"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/esp32/intro.md",
+                "file": "docs/esp32/Vibe-settings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for intro"
+              "title": "Backlinks for Vibe-settings"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/esp32/intro.md",
+                "file": "docs/esp32/Vibe-settings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from intro"
+              "title": "Outgoing links from Vibe-settings"
             }
           },
           {
@@ -142,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/esp32/intro.md",
+                "file": "docs/esp32/Vibe-settings.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of intro"
+              "title": "Outline of Vibe-settings"
             }
           },
           {
@@ -180,10 +195,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4d242a23d8a4ce6",
+  "active": "26a83ac1ca215114",
   "lastOpenFiles": [
-    "docs/index.md",
     "docs/esp32/intro.md",
+    "docs/esp32/Vibe-settings.md",
+    "docs/esp32/.md",
+    "docs/index.md",
     "README.md"
   ]
 }
