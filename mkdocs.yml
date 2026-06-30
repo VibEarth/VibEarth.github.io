@@ -32,7 +32,7 @@ nav:
   - ESP32 Project:
     - Intro: esp32/intro.md
     - I. ESP32-C3 SuperMini:
-      - Settings: esp32/c3/setup.md
+      - Settings: esp32/c3/settings.md
       # - Modules:
       #   - RGB_LED: esp32/c3/rgb_led.md
       #   - BME280: esp32/c3/bme280.md
