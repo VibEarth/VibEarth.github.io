@@ -9,7 +9,7 @@ Thinking of Earth, Making about Earth🜨
 
 ## Projects
 
-🌡️ **ESP32 프로젝트** — 교실에서 직접 만드는 소형기상관측기
+🌡️ **[ESP32 프로젝트](https://vibearth.dev/esp32/intro/)** — 교실에서 직접 만드는 소형기상관측기
 
 ---
 
