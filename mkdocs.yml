@@ -18,6 +18,11 @@ theme:
   features:
     - navigation.instant
     - navigation.top
+    
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 extra:
   social:
