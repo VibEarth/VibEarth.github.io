@@ -93,6 +93,7 @@ void loop() {
 
 SuperMini의 BOOT 버튼(GPIO9)은 업로드 모드 진입 용도이지만, 펌웨어가 정상 실행 중일 때는 일반 입력 핀으로 자유롭게 사용할 수 있습니다.
 
+<details> <summary>코드 보기</summary>
 ```cpp
 int led = 8;
 int bootBtn = 9;
@@ -114,6 +115,7 @@ void loop() {
 ### active-LOW 주의
 
 버튼이 눌리면 `LOW`, 떼면 `HIGH`로 읽힙니다(`INPUT_PULLUP` 방식이라 반전). LED도 마찬가지로 반전 연결이라, 처음엔 누르면 꺼지고 떼면 켜지는 반대 동작이 나올 수 있습니다. HIGH/LOW를 반대로 적어주면 해결됩니다.
+</details>
 
 ---
 
