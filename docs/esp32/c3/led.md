@@ -1,4 +1,6 @@
-# Hello, LED.  Hello, Vibe-Making🜨
+# ESP32 Project - C3 SuperMini - Hello, LED. 
+
+##Hello, LED.  Hello, Vibe-Making🜨
 
 > 모든 프로그래밍 입문이 "Hello, World!"로 시작하듯, 피지컬 컴퓨팅 입문은 LED 블링킹으로 시작합니다.
 > ESP32는 기본적으로 아두이노 IDE의 C++ 언어로 프로그래밍 되어 작동합니다. 물론, C++ 코딩이 처음이어도 괜찮습니다. 우리에게는 AI가 있으니까요.
