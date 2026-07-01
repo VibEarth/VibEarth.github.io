@@ -57,6 +57,8 @@ delay(2000); // 2초 — 천천히 깜빡임
 
 단순히 켜고 끄는 것에서 한 단계 나아가, LED를 서서히 켜고 끄는 PWM 제어입니다. 크리스마스 전구처럼 숨쉬듯 깜빡이는 패턴을 만들 수 있습니다.
 
+<details> <summary>코드 보기</summary>
+
 ```cpp
 int led = 8;
 
@@ -77,11 +79,7 @@ void loop() {
 }
 ```
 
-### analogWrite 대신 ledcWrite를 쓰는 이유
-
-아두이노 UNO에서는 `analogWrite()`로 PWM을 제어하지만, ESP32 아두이노 코어 3.x 버전부터는 `ledcAttach()` + `ledcWrite()` 방식을 사용합니다. `analogWrite()`를 쓰면 컴파일 에러가 나므로 주의합니다.
-
-> `ledcAttach(핀, 주파수, 해상도)` 한 줄로 설정하고, `ledcWrite(핀, 0~255)`로 밝기를 제어합니다.
+</details>
 
 ---
 
