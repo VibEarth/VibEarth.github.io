@@ -116,6 +116,7 @@ void loop() {
 ### active-LOW 주의
 
 버튼이 눌리면 `LOW`, 떼면 `HIGH`로 읽힙니다(`INPUT_PULLUP` 방식이라 반전). LED도 마찬가지로 반전 연결이라, 처음엔 누르면 꺼지고 떼면 켜지는 반대 동작이 나올 수 있습니다. HIGH/LOW를 반대로 적어주면 해결됩니다.
+
 </details>
 
 ---
