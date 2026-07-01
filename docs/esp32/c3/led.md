@@ -78,7 +78,6 @@ void loop() {
   delay(1000); // 꺼진 후 1초 대기
 }
 ```
-
 </details>
 
 ---
