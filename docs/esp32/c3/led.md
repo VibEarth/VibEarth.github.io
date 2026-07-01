@@ -138,5 +138,5 @@ LED 하나를 깜빡이는 게 전부였지만, 여기서 처음으로 바이브
 물론 그 과정이 쉽지는 않고 시간도 꽤 걸리지만, 
 
 <blockquote style="font-size: 1.2em; text-align: center; border-left: none; font-style: italic;"> 
-	"여러분이 생각하는 것을 만들 수 있는 세상이 분명히 왔습니다🜨" 
+	"생각한대로 만들 수 있는 세상이 분명히 왔습니다. VibEarth🜨" 
 </blockquote>
