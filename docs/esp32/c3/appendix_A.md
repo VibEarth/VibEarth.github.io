@@ -19,16 +19,18 @@ height: 350px;
 ## Sensor Comparison
 
 ### Temperature
-
-<canvas id="temperatureChart"></canvas>
-
+<div class="chart-container">  
+	<canvas id="temperatureChart"></canvas>  
+</div>
 ### Humidity
-
-<canvas id="humidityChart"></canvas>
-
+  
+<div class="chart-container">  
+	<canvas id="humidityChart"></canvas>  
+</div>
 ### Pressure
-
-<canvas id="pressureChart"></canvas>
+<div class="chart-container">  
+	<canvas id="pressureChart"></canvas>  
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="/assets/bme280/sensorCharts.js"></script>
