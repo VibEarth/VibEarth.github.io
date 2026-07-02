@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/assets/appendix_sensors.md",
+                "file": "temp trio test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "appendix_sensors"
+              "title": "temp trio test"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/assets/appendix_sensors.md",
+                "file": "temp trio test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for appendix_sensors"
+              "title": "Backlinks for temp trio test"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/assets/appendix_sensors.md",
+                "file": "temp trio test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from appendix_sensors"
+              "title": "Outgoing links from temp trio test"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/assets/appendix_sensors.md",
+                "file": "temp trio test.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of appendix_sensors"
+              "title": "Outline of temp trio test"
             }
           },
           {
@@ -195,14 +195,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c38ed5a531f7c056",
+  "active": "f66989b5d24394ba",
   "lastOpenFiles": [
-    "docs/esp32/c3/bme280.md",
     "docs/assets/appendix_sensors.md",
+    "docs/esp32/c3/bme280.md",
+    "docs/assets/bme280_chip.png",
     "docs/index.md",
     "BME280 배선도.md",
     "docs/esp32/c3/led.md",
-    "docs/assets/bme280_chip.png",
     "docs/assets",
     "docs/esp32/c3/bme280_cirkit.png",
     "().md",
