@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/esp32/c3/bme280.md",
+                "file": "docs/esp32/c3/appendix_A.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bme280"
+              "title": "appendix_A"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/esp32/c3/bme280.md",
+                "file": "docs/esp32/c3/appendix_A.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for bme280"
+              "title": "Backlinks for appendix_A"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/esp32/c3/bme280.md",
+                "file": "docs/esp32/c3/appendix_A.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from bme280"
+              "title": "Outgoing links from appendix_A"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/esp32/c3/bme280.md",
+                "file": "docs/esp32/c3/appendix_A.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of bme280"
+              "title": "Outline of appendix_A"
             }
           },
           {
@@ -197,13 +197,14 @@
   },
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
-    "docs/esp32/c3/Appendix A_Sensors.md",
+    "docs/assets/bme280/sensors_raw.md",
+    "docs/assets/bme280/bme280_chip.png",
+    "docs/esp32/c3/appendix_A.md",
     "docs/esp32/c3/bme280.md",
+    "docs/esp32/c3/Appendix A_Sensors.md",
     "docs/esp32/c3/settings.md",
     "docs/esp32/c3/led.md",
-    "docs/assets/bme280/bme280_chip.png",
     "docs/assets/bme280/sensorCharts.js.sb-c3b4498a-h8VL8X",
-    "docs/assets/bme280/sensors_raw.md",
     "docs/assets/bme280/sensors.csv",
     "docs/assets/bme280/sensorCharts.js",
     "docs/assets/bme280",
