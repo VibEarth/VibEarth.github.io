@@ -3,16 +3,17 @@
 
 ---
 <style>
-.chart-container {  
-position: relative;  
-width: 100%;  
-height: 350px;  
-}  
-  
-@media (max-width: 768px) {  
-	.chart-container {  
-	height: 300px;  
-	}  
+.chart-container{
+    position:relative;
+    width:100%;
+    height:420px;
+    margin:2rem 0;
+}
+
+@media (max-width:768px){
+    .chart-container{
+        height:300px;
+    }
 }
 </style>
 
