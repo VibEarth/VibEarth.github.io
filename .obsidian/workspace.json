@@ -197,10 +197,10 @@
   },
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
+    "docs/esp32/c3/bme280.md",
+    "docs/esp32/c3/appendix_A.md",
     "docs/assets/bme280/sensors_raw.md",
     "docs/assets/bme280/bme280_chip.png",
-    "docs/esp32/c3/appendix_A.md",
-    "docs/esp32/c3/bme280.md",
     "docs/esp32/c3/Appendix A_Sensors.md",
     "docs/esp32/c3/settings.md",
     "docs/esp32/c3/led.md",

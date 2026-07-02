@@ -1,11 +1,16 @@
 ---
 
 <style>
-.chart-container{
-    position: relative;
-    width: 100%;
-    height: clamp(380px, 55vw, 520px);
-    margin: 30px 0;
+.chart-container {  
+position: relative;  
+width: 100%;  
+height: 350px;  
+}  
+  
+@media (max-width: 768px) {  
+	.chart-container {  
+	height: 300px;  
+	}  
 }
 </style>
 
