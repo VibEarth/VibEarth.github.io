@@ -30,13 +30,12 @@ function makeChart(id, title, labels, datasets, yTitle) {
         },
 
         options: {
-
-    responsive: true,
-
-    interaction:{
-        intersect:false,
-        mode:'index'
-    },
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction:{
+                intersect:false,
+                mode:'index'
+        },
 
     plugins:{
         title:{
