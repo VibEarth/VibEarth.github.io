@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/assets/appendix_sensors.md",
+                "file": "docs/assets/bme280/Appendix A_Sensors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "appendix_sensors"
+              "title": "Appendix A_Sensors"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/assets/appendix_sensors.md",
+                "file": "docs/assets/bme280/Appendix A_Sensors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for appendix_sensors"
+              "title": "Backlinks for Appendix A_Sensors"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/assets/appendix_sensors.md",
+                "file": "docs/assets/bme280/Appendix A_Sensors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from appendix_sensors"
+              "title": "Outgoing links from Appendix A_Sensors"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/assets/appendix_sensors.md",
+                "file": "docs/assets/bme280/Appendix A_Sensors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of appendix_sensors"
+              "title": "Outline of Appendix A_Sensors"
             }
           },
           {
@@ -197,9 +197,14 @@
   },
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
-    "docs/assets/bme280_chip.png",
-    "docs/assets/appendix_sensors.md",
-    "docs/assets/sensors_raw.md",
+    "docs/assets/bme280/sensorCharts.js.sb-c3b4498a-h8VL8X",
+    "docs/esp32/c3/bme280.md",
+    "docs/assets/bme280/sensors_raw.md",
+    "docs/assets/bme280/bme280_chip.png",
+    "docs/assets/bme280/Appendix A_Sensors.md",
+    "docs/assets/bme280/sensors.csv",
+    "docs/assets/bme280/sensorCharts.js",
+    "docs/assets/bme280",
     "docs/assets/sensorCharts.js",
     "docs/assets/sensors 복사본.csv.sb-c3b4498a-Hrb3mn",
     "docs/assets/sensors 복사본.csv",
@@ -210,18 +215,15 @@
     "docs/assets/temp sensors test 복사본.md",
     "docs/assets/Untitled.base",
     "docs/assets/temp sensors test.md",
-    "docs/esp32/c3/bme280.md",
     "docs/esp32/intro.md",
     "docs/index.md",
     "BME280 배선도.md",
     "docs/esp32/c3/led.md",
-    "docs/assets",
     "docs/esp32/c3/bme280_cirkit.png",
     "().md",
     "Bosch가 만든 환경 센서.md",
     "docs/esp32/c3/settings.md",
     "README.md",
-    "docs/esp32/c3",
     "docs/esp32/.md"
   ]
 }
