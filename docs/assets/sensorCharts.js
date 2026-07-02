@@ -1,7 +1,11 @@
 async function loadCSV(url) {
     const text = await fetch(url).then(r => r.text());
 
-    const rows = text.trim().split("\n").map(r => r.split(","));
+    const rows = text
+    .trim()
+    .replace(/\r/g, "")
+    .split("\n")
+    .map(r => r.split(","));
 
     const header = rows.shift();
 
