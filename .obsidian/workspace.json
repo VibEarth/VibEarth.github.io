@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/assets/bme280/Appendix A_Sensors.md",
+                "file": "docs/esp32/c3/Appendix A_Sensors.md",
                 "mode": "source",
                 "source": false
               },
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/assets/bme280/Appendix A_Sensors.md",
+                "file": "docs/esp32/c3/Appendix A_Sensors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/assets/bme280/Appendix A_Sensors.md",
+                "file": "docs/esp32/c3/Appendix A_Sensors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/assets/bme280/Appendix A_Sensors.md",
+                "file": "docs/esp32/c3/Appendix A_Sensors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -197,11 +197,13 @@
   },
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
-    "docs/assets/bme280/sensorCharts.js.sb-c3b4498a-h8VL8X",
     "docs/esp32/c3/bme280.md",
-    "docs/assets/bme280/sensors_raw.md",
+    "docs/esp32/c3/Appendix A_Sensors.md",
+    "docs/esp32/c3/settings.md",
+    "docs/esp32/c3/led.md",
     "docs/assets/bme280/bme280_chip.png",
-    "docs/assets/bme280/Appendix A_Sensors.md",
+    "docs/assets/bme280/sensorCharts.js.sb-c3b4498a-h8VL8X",
+    "docs/assets/bme280/sensors_raw.md",
     "docs/assets/bme280/sensors.csv",
     "docs/assets/bme280/sensorCharts.js",
     "docs/assets/bme280",
@@ -213,16 +215,13 @@
     "docs/assets/sensors.csv",
     "docs/assets/temp sensors test 복사본.csv",
     "docs/assets/temp sensors test 복사본.md",
-    "docs/assets/Untitled.base",
     "docs/assets/temp sensors test.md",
     "docs/esp32/intro.md",
     "docs/index.md",
     "BME280 배선도.md",
-    "docs/esp32/c3/led.md",
     "docs/esp32/c3/bme280_cirkit.png",
     "().md",
     "Bosch가 만든 환경 센서.md",
-    "docs/esp32/c3/settings.md",
     "README.md",
     "docs/esp32/.md"
   ]

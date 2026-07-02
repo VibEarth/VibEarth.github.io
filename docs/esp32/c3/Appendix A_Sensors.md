@@ -15,4 +15,4 @@
 <canvas id="pressureChart"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="/assets/sensorCharts.js"></script>
+<script src="/assets/bme280/sensorCharts.js"></script>
