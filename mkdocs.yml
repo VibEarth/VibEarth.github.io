@@ -36,6 +36,10 @@ extra:
     provider: google
     property: G-CEZKH5YMXY
 
+plugins:
+  - search
+  - roamlinks
+
 nav:
   - Home: index.md
   - ESP32 Project:
