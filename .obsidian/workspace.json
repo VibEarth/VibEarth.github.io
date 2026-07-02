@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/assets/sensors_raw.md",
+                "file": "docs/assets/appendix_sensors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sensors_raw"
+              "title": "appendix_sensors"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/assets/sensors_raw.md",
+                "file": "docs/assets/appendix_sensors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for sensors_raw"
+              "title": "Backlinks for appendix_sensors"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/assets/sensors_raw.md",
+                "file": "docs/assets/appendix_sensors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from sensors_raw"
+              "title": "Outgoing links from appendix_sensors"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/assets/sensors_raw.md",
+                "file": "docs/assets/appendix_sensors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of sensors_raw"
+              "title": "Outline of appendix_sensors"
             }
           },
           {
@@ -198,11 +198,11 @@
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
     "docs/assets/bme280_chip.png",
+    "docs/assets/sensors_raw.md",
     "docs/assets/appendix_sensors.md",
     "docs/assets/sensorCharts.js",
     "docs/assets/sensors 복사본.csv.sb-c3b4498a-Hrb3mn",
     "docs/assets/sensors 복사본.csv",
-    "docs/assets/sensors_raw.md",
     "docs/assets/sensors.md",
     "docs/assets/sensors.csv.sb-c3b4498a-ovMz43",
     "docs/assets/sensors.csv",
