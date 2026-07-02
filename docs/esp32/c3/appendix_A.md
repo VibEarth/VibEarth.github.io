@@ -1,5 +1,7 @@
----
 
+# ESP32 Project - C3 SuperMini - Appendix A. Sensors
+
+---
 <style>
 .chart-container {  
 position: relative;  
