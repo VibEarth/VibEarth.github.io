@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temp trio test.md",
+                "file": "docs/esp32/c3/bme280.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "temp trio test"
+              "title": "bme280"
             }
           }
         ],
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "temp trio test.md",
+                "file": "docs/esp32/c3/bme280.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for temp trio test"
+              "title": "Backlinks for bme280"
             }
           },
           {
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "temp trio test.md",
+                "file": "docs/esp32/c3/bme280.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from temp trio test"
+              "title": "Outgoing links from bme280"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "temp trio test.md",
+                "file": "docs/esp32/c3/bme280.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of temp trio test"
+              "title": "Outline of bme280"
             }
           },
           {
@@ -211,9 +211,10 @@
   },
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
-    "temp trio test.md",
-    "docs/esp32/c3/settings.md",
     "docs/esp32/c3/led.md",
+    "docs/esp32/c3/bme280.md",
+    "docs/esp32/c3/settings.md",
+    "temp trio test.md",
     "docs/esp32/intro.md",
     "docs/index.md",
     "README.md",
