@@ -1,5 +1,5 @@
 
-# ESP32 Project - C3 SuperMini - Appendix A. Sensors
+# ESP32 Project - C3 SuperMini - Appendix A. Sensors Comparison
 
 ---
 <style>
@@ -16,9 +16,6 @@
     }
 }
 </style>
-
-## Sensor Comparison
-
 ### Temperature
 <div class="chart-container">  
 	<canvas id="temperatureChart"></canvas>  
