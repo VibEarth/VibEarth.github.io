@@ -31,38 +31,60 @@ function makeChart(id, title, labels, datasets, yTitle) {
 
         options: {
 
-            responsive: true,
+    responsive: true,
 
-            interaction:{
-                intersect:false,
-                mode:'index'
-            },
+    interaction:{
+        intersect:false,
+        mode:'index'
+    },
 
-            plugins:{
-                title:{
-                    display:true,
-                    text:title
-                },
-                legend:{
-                    position:'top'
-                }
-            },
-
-            scales:{
-                x:{
-                    title:{
-                        display:true,
-                        text:'Sample'
-                    }
-                },
-                y:{
-                    title:{
-                        display:true,
-                        text:yTitle
-                    }
-                }
+    plugins:{
+        title:{
+            display:true,
+            text:title,
+            color:"#ffffff",          // 제목 흰색
+            font:{
+                size:20
+            }
+        },
+        legend:{
+            position:'top',
+            labels:{
+                color:"#ffffff"       // 범례 흰색
             }
         }
+    },
+
+    scales:{
+        x:{
+            title:{
+                display:true,
+                text:'Sample',
+                color:"#ffffff"       // x축 제목
+            },
+            ticks:{
+                color:"#cccccc"       // x축 숫자
+            },
+            grid:{
+                color:"rgba(255,255,255,0.12)"   // 회색 격자선
+            }
+        },
+
+        y:{
+            title:{
+                display:true,
+                text:yTitle,
+                color:"#ffffff"       // y축 제목
+            },
+            ticks:{
+                color:"#cccccc"       // y축 숫자
+            },
+            grid:{
+                color:"rgba(255,255,255,0.12)"   // 회색 격자선
+            }
+        }
+    }
+}
 
     });
 
