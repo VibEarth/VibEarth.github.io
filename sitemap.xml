@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://vibearth.dev/</loc>
+         <lastmod>2026-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vibearth.dev/assets/bme280/sensors_raw/</loc>
+         <lastmod>2026-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vibearth.dev/esp32/intro/</loc>
+         <lastmod>2026-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vibearth.dev/esp32/c3/appendix_A/</loc>
+         <lastmod>2026-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vibearth.dev/esp32/c3/bme280/</loc>
+         <lastmod>2026-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vibearth.dev/esp32/c3/led/</loc>
+         <lastmod>2026-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://vibearth.dev/esp32/c3/settings/</loc>
+         <lastmod>2026-07-02</lastmod>
+    </url>
+</urlset>
