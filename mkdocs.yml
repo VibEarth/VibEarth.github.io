@@ -43,6 +43,7 @@ nav:
     - I. ESP32-C3 SuperMini:
       - Settings: esp32/c3/settings.md
       - Hello,LED: esp32/c3/led.md
+      - BME280 sensor: esp32/c3/bme280.md
       # - Modules:
       #   - RGB_LED: esp32/c3/rgb_led.md
       #   - BME280: esp32/c3/bme280.md
