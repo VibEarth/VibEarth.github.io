@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/esp32/c3/Appendix A_Sensors.md",
+                "file": "docs/esp32/c3/bme280.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Appendix A_Sensors"
+              "title": "bme280"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/esp32/c3/Appendix A_Sensors.md",
+                "file": "docs/esp32/c3/bme280.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Appendix A_Sensors"
+              "title": "Backlinks for bme280"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/esp32/c3/Appendix A_Sensors.md",
+                "file": "docs/esp32/c3/bme280.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Appendix A_Sensors"
+              "title": "Outgoing links from bme280"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/esp32/c3/Appendix A_Sensors.md",
+                "file": "docs/esp32/c3/bme280.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Appendix A_Sensors"
+              "title": "Outline of bme280"
             }
           },
           {
@@ -197,8 +197,8 @@
   },
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
-    "docs/esp32/c3/bme280.md",
     "docs/esp32/c3/Appendix A_Sensors.md",
+    "docs/esp32/c3/bme280.md",
     "docs/esp32/c3/settings.md",
     "docs/esp32/c3/led.md",
     "docs/assets/bme280/bme280_chip.png",
