@@ -49,7 +49,7 @@ nav:
       - Hello,LED: esp32/c3/led.md
       - BME280 sensor: esp32/c3/bme280.md
     - Appendix: 
-      - Appendix A.sensors: esp32/c3/appendix_a.md
+      - Appendix A.sensors: esp32/c3/appendix_A.md
       # - Modules:
       #   - RGB_LED: esp32/c3/rgb_led.md
       #   - BME280: esp32/c3/bme280.md
