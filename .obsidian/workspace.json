@@ -197,9 +197,10 @@
   },
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
+    "BME280 배선도.md",
+    "docs/esp32/c3/bme280.md",
     "docs/esp32/c3/led.md",
     "docs/assets/bme280_chip.png",
-    "docs/esp32/c3/bme280.md",
     "docs/assets",
     "docs/esp32/c3/bme280_cirkit.png",
     "().md",
