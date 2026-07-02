@@ -70,7 +70,7 @@ function makeChart(id, title, labels, datasets, yTitle) {
 
 (async ()=>{
 
-const data = await loadCSV("/assets/sensor.csv");
+const data = await loadCSV("/assets/sensors.csv");
 
 const labels = data.map(d=>d.Index);
 
