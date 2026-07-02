@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/esp32/intro.md",
+                "file": "docs/esp32/c3/bme280.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "intro"
+              "title": "bme280"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temp trio test.md",
+                "file": "docs/assets/appendix_sensors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "temp trio test"
+              "title": "appendix_sensors"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "temp trio test.md",
+                "file": "docs/assets/appendix_sensors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for temp trio test"
+              "title": "Backlinks for appendix_sensors"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "temp trio test.md",
+                "file": "docs/assets/appendix_sensors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from temp trio test"
+              "title": "Outgoing links from appendix_sensors"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "temp trio test.md",
+                "file": "docs/assets/appendix_sensors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of temp trio test"
+              "title": "Outline of appendix_sensors"
             }
           },
           {
@@ -197,9 +197,11 @@
   },
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
+    "docs/assets/bme280_chip.png",
+    "docs/assets/temp sensors test.md",
     "docs/assets/appendix_sensors.md",
     "docs/esp32/c3/bme280.md",
-    "docs/assets/bme280_chip.png",
+    "docs/esp32/intro.md",
     "docs/index.md",
     "BME280 배선도.md",
     "docs/esp32/c3/led.md",
@@ -207,9 +209,7 @@
     "docs/esp32/c3/bme280_cirkit.png",
     "().md",
     "Bosch가 만든 환경 센서.md",
-    "docs/esp32/intro.md",
     "docs/esp32/c3/settings.md",
-    "temp trio test.md",
     "README.md",
     "docs/esp32/c3",
     "docs/esp32/.md"
