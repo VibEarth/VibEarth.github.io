@@ -197,8 +197,9 @@
   },
   "active": "f66989b5d24394ba",
   "lastOpenFiles": [
-    "().md",
+    "docs/esp32/c3/bme280_cirkit.png",
     "docs/esp32/c3/bme280.md",
+    "().md",
     "Bosch가 만든 환경 센서.md",
     "docs/esp32/c3/led.md",
     "docs/esp32/intro.md",
