@@ -11,8 +11,9 @@ async function loadCSV(url) {
 
     return rows.map(r => {
         let obj = {};
-        header.forEach((h, i) => obj[h.trim()] = Number(r[i].trim());
-        
+        header.forEach((h, i) => {
+            obj[h.trim()] = Number(r[i].trim());
+        });
         return obj;
     });
 }
