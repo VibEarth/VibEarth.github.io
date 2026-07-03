@@ -14,18 +14,10 @@
 	AI에게 진 것 같아서 부끄럽고 화가 날 것 같다가, 이거 더 발전시키면 어떻게 될까, 궁금해집니다.  
 	이제부터 보여드리겠습니다🜨
 
-## ESP32를 무선공유기처럼
 
-ESP32에는 WiFi가 내장되어 있고, 두 가지 모드로 동작합니다.
+## BME280 + WiFi 웹서버 코드 업로드
 
-- **Station 모드**: 기존 공유기에 접속 (일반적인 WiFi 연결)
-- **AP 모드(Access Point)**: ESP32 자체가 공유기가 됨
-
-AP 모드로 설정하면 ESP32가 직접 핫스팟을 만들기 때문에 스마트폰에서 `C3-Weather` SSID에 접속하면 바로 연결됩니다.
-
-## 업로드 코드 파일 구조
-
-기존 bme280.ino 코드에 웹서버 기능을 전부 넣으면 금방 수백 줄이 됩니다. 역할을 분리해서 세 파일로 나눠줍니다.
+기존 bme280.ino 코드에 웹서버 기능을 전부 넣으면 금방 수백 줄이 됩니다. 역할을 분리해서 세 파일로 나눴습니다.
 
 ```
 weather_station/
@@ -34,64 +26,73 @@ weather_station/
 └── web_ui.cpp            ← 웹서버 + HTML/JS
 ```
 
-`web_ui.h`에 정의한 `WebSensorData` 구조체가 두 파일을 연결합니다. 센서값을 여기에 채우면 웹서버가 알아서 JSON으로 내려줍니다.
 
-```cpp
-struct WebSensorData {
-  float temp;
-  float humidity;
-  float pressure;
-  float altitude;
-  bool  bmeOk;
-  uint32_t readCount;
-  uint32_t lastUpdateMs;
-};
-```
+??? example "주요 코드"
+	### AP 시작
+	
+	```cpp
+	const char* AP_SSID = "C3-Weather";
+	const char* AP_PASS = "12345678";
+	
+	WiFi.mode(WIFI_AP);
+	WiFi.softAP(AP_SSID, AP_PASS);
+	```
+	
+	접속 후 브라우저에서 `http://192.168.4.1` 을 열면 대시보드가 나옵니다. 이 IP는 ESP32 AP 모드의 기본 게이트웨이 주소입니다.
+	
+	### 서버사이드 히스토리
+	
+	브라우저가 새로 접속하거나 새로고침해도 이전 데이터가 사라지지 않도록, 측정값을 ESP32 메모리에 직접 쌓습니다.
+	
+	```cpp
+	#define HISTORY_SIZE 1200  // 1초 × 1200 = 20분
+	
+	struct HistoryEntry { float temp; float humidity;
+	                      float pressure; float altitude; uint32_t ms; };
+	static HistoryEntry gHistory[HISTORY_SIZE];
+	```
+	
+	링 버퍼 방식이라 가득 차면 가장 오래된 데이터부터 덮어씁니다. 연수 시작부터 끝까지 누적되고, 다른 스마트폰에서 접속해도 같은 그래프를 볼 수 있습니다.
+	
+	### BME280 측정 설정
+	
+	```cpp
+	bme.setSampling(
+	  Adafruit_BME280::MODE_FORCED,
+	  Adafruit_BME280::SAMPLING_X4,  // 4회 평균
+	  Adafruit_BME280::SAMPLING_X4,
+	  Adafruit_BME280::SAMPLING_X4,
+	  Adafruit_BME280::FILTER_OFF,
+	  Adafruit_BME280::STANDBY_MS_1000
+	);
+	```
+	
+	`SAMPLING_X1`은 한 번 측정해서 그대로 쓰고, `SAMPLING_X4`는 내부에서 4번 측정해 평균을 냅니다. 코드 한 줄 바꿔서 노이즈를 줄일 수 있다는 게 BME280의 장점입니다.
+	
+	`MODE_FORCED`는 `takeForcedMeasurement()`를 호출할 때만 측정합니다. 그 사이에는 슬립 상태라 자기발열이 줄어들어 온도 측정값이 더 정확합니다.
+	
+	`web_ui.h`에 정의한 `WebSensorData` 구조체가 두 파일을 연결합니다. 센서값을 여기에 채우면 웹서버가 알아서 JSON으로 내려줍니다.
+	
+	```cpp
+	struct WebSensorData {
+	  float temp;
+	  float humidity;
+	  float pressure;
+	  float altitude;
+	  bool  bmeOk;
+	  uint32_t readCount;
+	  uint32_t lastUpdateMs;
+	};
+	```
 
-## 주요 코드
+## ESP32를 무선공유기처럼
 
-### AP 시작
+ESP32에는 WiFi가 내장되어 있고, 두 가지 모드로 동작합니다.
 
-```cpp
-const char* AP_SSID = "C3-Weather";
-const char* AP_PASS = "12345678";
+- **Station 모드**: 기존 공유기에 접속 (일반적인 WiFi 연결)
+- **AP 모드(Access Point)**: ESP32 자체가 공유기가 됨
 
-WiFi.mode(WIFI_AP);
-WiFi.softAP(AP_SSID, AP_PASS);
-```
-
-접속 후 브라우저에서 `http://192.168.4.1` 을 열면 대시보드가 나옵니다. 이 IP는 ESP32 AP 모드의 기본 게이트웨이 주소입니다.
-
-### 서버사이드 히스토리
-
-브라우저가 새로 접속하거나 새로고침해도 이전 데이터가 사라지지 않도록, 측정값을 ESP32 메모리에 직접 쌓습니다.
-
-```cpp
-#define HISTORY_SIZE 1200  // 1초 × 1200 = 20분
-
-struct HistoryEntry { float temp; float humidity;
-                      float pressure; float altitude; uint32_t ms; };
-static HistoryEntry gHistory[HISTORY_SIZE];
-```
-
-링 버퍼 방식이라 가득 차면 가장 오래된 데이터부터 덮어씁니다. 연수 시작부터 끝까지 누적되고, 다른 스마트폰에서 접속해도 같은 그래프를 볼 수 있습니다.
-
-### BME280 측정 설정
-
-```cpp
-bme.setSampling(
-  Adafruit_BME280::MODE_FORCED,
-  Adafruit_BME280::SAMPLING_X4,  // 4회 평균
-  Adafruit_BME280::SAMPLING_X4,
-  Adafruit_BME280::SAMPLING_X4,
-  Adafruit_BME280::FILTER_OFF,
-  Adafruit_BME280::STANDBY_MS_1000
-);
-```
-
-`SAMPLING_X1`은 한 번 측정해서 그대로 쓰고, `SAMPLING_X4`는 내부에서 4번 측정해 평균을 냅니다. 코드 한 줄 바꿔서 노이즈를 줄일 수 있다는 게 BME280의 장점입니다.
-
-`MODE_FORCED`는 `takeForcedMeasurement()`를 호출할 때만 측정합니다. 그 사이에는 슬립 상태라 자기발열이 줄어들어 온도 측정값이 더 정확합니다.
+AP 모드로 설정하면 ESP32가 직접 핫스팟을 만들기 때문에 스마트폰에서 `C3-Weather` SSID에 접속하면 바로 연결됩니다.
 
 ## 웹 UI
 
