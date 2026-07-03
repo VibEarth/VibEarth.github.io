@@ -1,4 +1,4 @@
-# # ESP32 Project - C3 SuperMini - ESP32 WiFi webserver
+# ESP32 Project - C3 SuperMini - ESP32 WiFi webserver
 
 >BME280으로 온도, 습도, 기압을 읽는 것까지는 됐는데, 시리얼 모니터는 컴퓨터에 연결된 상태에서만 볼 수 있습니다. 이번엔 ESP32를 WiFi 웹서버로 만들어서 스마트폰으로 실시간 데이터를 볼 수 있게 합니다.
 
