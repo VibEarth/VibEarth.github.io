@@ -122,7 +122,10 @@ Web UI  : http://192.168.4.1
 
 `http://192.168.4.1` 에 들어가면, 데이터 카드 4개(온도, 습도, 기압, 고도)와 그래프 2개(온도/습도, 기압/고도)가 표시됩니다.
 
-
+<div style="display:flex; gap:8px;"> 
+	![[esp32_webserver_1.png]] 
+	![[esp32_webserver_2.png]] 
+</div>
 
 ??? example "웹페이지 기능 설명"
 	
