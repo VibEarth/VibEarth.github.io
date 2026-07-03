@@ -17,7 +17,7 @@
 
 ## BME280 + WiFi 웹서버 코드 업로드
 
-기존 bme280.ino 코드에 웹서버 기능을 전부 넣으면 금방 수백 줄이 됩니다. 역할을 분리해서 세 파일로 나눴습니다.
+기존 bme280.ino 코드에 웹서버 기능을 전부 넣으면 금방 수백 줄이 됩니다. 역할을 분리해서 세 파일로 나눴습니다(🤖).
 
 ```
 weather_station/
@@ -26,8 +26,11 @@ weather_station/
 └── web_ui.cpp            ← 웹서버 + HTML/JS
 ```
 
+weather_station.zip 파일을 다운로드 받아 압축을 풀고 아두이노 IDE에서 weather_station.ino 엽니다. 
+그럼 IDE에 위의 세 가지 파일이 모두 열립니다.
+그 상태에서 업로드 해주세요.
 
-??? example "주요 코드"
+??? example "주요 코드 보기(🤖)"
 	### AP 시작
 	
 	```cpp
@@ -90,9 +93,10 @@ weather_station/
 ESP32에는 WiFi가 내장되어 있고, 두 가지 모드로 동작합니다.
 
 - **Station 모드**: 기존 공유기에 접속 (일반적인 WiFi 연결)
-- **AP 모드(Access Point)**: ESP32 자체가 공유기가 됨
+- **AP 모드(Access Point)**: ESP32 자체가 공유기(WiFi 서버)가 됨
 
-AP 모드로 설정하면 ESP32가 직접 핫스팟을 만들기 때문에 스마트폰에서 `C3-Weather` SSID에 접속하면 바로 연결됩니다.
+AP 모드로 설정하면 ESP32가 직접 핫스팟을 만들기 때문에 스마트폰에서 WiFi 설정에 들 `C3-Weather` SSID에 접속하면 바로 연결됩니다.
+
 
 ## 웹 UI
 
