@@ -121,11 +121,10 @@ Web UI  : http://192.168.4.1
 ## 짜잔~🎉 ESP32 기상관측기 페이지에 접속하신 것을 환영합니다!!!
 
 `http://192.168.4.1` 에 들어가면, 데이터 카드 4개(온도, 습도, 기압, 고도)와 그래프 2개(온도/습도, 기압/고도)가 표시됩니다.
-	![](../assets/webserver/esp32_webserver_1.png)
-	![](/assets/webserver/esp32_webserver_2.png)
-<div style="display:flex; gap:8px; align-items:flex-start;"> 
-	![](/assets/webserver/esp32_webserver_1.png)
-	![](/assets/webserver/esp32_webserver_2.png)
+
+<div style="display:flex; gap:8px;">
+  <img src="/assets/webserver/esp32_webserver_1.png" style="width:50%;">
+  <img src="/assets/webserver/esp32_webserver_2.png" style="width:50%;">
 </div>
 
 ??? example "웹페이지 기능 설명"
