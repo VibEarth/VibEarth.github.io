@@ -35,7 +35,7 @@ weather_station/
 └── web_ui.cpp            ← 웹서버 + HTML/JS
 ```
 
-[weather_station.zip](/docs/assets/webserver/weather_station/weather_station.zip) 파일을 다운로드 받아 압축을 풀고 아두이노 IDE에서 weather_station.ino 엽니다. 
+[weather_station.zip](/docs/assets/webserver/weather_station.zip) 파일을 다운로드 받아 압축을 풀고 아두이노 IDE에서 weather_station.ino 엽니다. 
 그럼 IDE에 위의 세 가지 파일이 모두 열립니다.
 그 상태에서 업로드 해주세요.
 
