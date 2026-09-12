@@ -6,6 +6,7 @@ ESP32는 Espressif사의 소형 마이크로컨트롤러 보드입니다.
 아두이노의 개발환경과 방대한 라이브러리를 그대로 사용할 수 있습니다.
 
 <small>Figure 1. ESP32-DevKitC V4 보드</small>
+
 ![alt text](../assets/esp32/esp32-devkit.png)
 
 ESP32에는 다양한 칩과 개발보드가 있습니다.
@@ -54,3 +55,7 @@ C3보다 성능이 우위인 S3로 ESP32의 성능을 최대한 활용하는 ESP
 이후 XIAO S3로 옮겨 드론에 장착하는 과정을 이어서 포스팅하겠습니다🜨
 
 ---
+<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+  <a href="../index.md">← 홈으로</a>
+  <a href="./c3/settings.md">다음: ESP32-C3 SuperMini →</a>
+</div>
