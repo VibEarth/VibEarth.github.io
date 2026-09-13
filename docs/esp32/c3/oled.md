@@ -73,7 +73,7 @@ AI 함께 핀설정을 수정하여 업로드하면 Adafruit 로고와 도형 �
 
 !!! tips "ssd1306_128x64_i2c.ino 코드 수정본"
     예제 코드가 600여 줄로 길어서 파일로 첨부합니다.
-    ![[ssd1306_128x64_i2c.ino]]
+    [ssd1306_128x64_i2c.ino](/assets/oled/ssd1306_128x64_i2c.ino)
 
 ---
 
