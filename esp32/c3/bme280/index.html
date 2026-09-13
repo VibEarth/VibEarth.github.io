@@ -18,7 +18,7 @@
         <link rel="prev" href="../led/">
       
       
-        <link rel="next" href="../wifi_webserver/">
+        <link rel="next" href="../oled/">
       
       
         
@@ -522,10 +522,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#wiring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        배선
+        배선 연결 (wiring)
       
     </span>
   </a>
@@ -533,7 +533,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         라이브러리 설치
@@ -555,7 +555,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         짜잔~! 드디어 데이터를 읽었습니다! 👏 🎉 👍
@@ -614,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../esp/c3/oled.md" class="md-nav__link">
+      <a href="../oled/" class="md-nav__link">
         
   
   
@@ -821,10 +821,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#wiring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        배선
+        배선 연결 (wiring)
       
     </span>
   </a>
@@ -832,7 +832,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         라이브러리 설치
@@ -854,7 +854,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         짜잔~! 드디어 데이터를 읽었습니다! 👏 🎉 👍
@@ -1015,33 +1015,38 @@ BME280 센서 간에는 측정 오차보다도 작은 차이가 보였고, DHT11
 <li>점퍼 케이블 세트(수-수)</li>
 </ul>
 <hr />
-<h2 id="_2">배선</h2>
+<h2 id="wiring">배선 연결 (wiring)</h2>
 <p>BME280은 I2C 또는 SPI 방식으로 ESP32-C3 Supermini와 통신할 수 있습니다. 
 I2C는 연결이 쉽지만 통신 속도가 느리고, SPI는 연결이 복잡지만 안정되고 빠른 통신이 가능합니다.
 실습용으로는 I2C로 핀 4개만 C3에 연결하면 됩니다.</p>
 <table>
 <thead>
 <tr>
-<th>BME280 모듈</th>
-<th>C3 SuperMini</th>
+<th style="text-align: center;">BME280 모듈</th>
+<th style="text-align: center;">C3 SuperMini</th>
+<th style="text-align: center;">색상</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>VIN</td>
-<td>3.3V</td>
+<td style="text-align: center;">VCC</td>
+<td style="text-align: center;">3.3V</td>
+<td style="text-align: center;">빨강</td>
 </tr>
 <tr>
-<td>GND</td>
-<td>GND</td>
+<td style="text-align: center;">GND</td>
+<td style="text-align: center;">GND</td>
+<td style="text-align: center;">검정</td>
 </tr>
 <tr>
-<td>SDA</td>
-<td>GPIO6</td>
+<td style="text-align: center;">SDA</td>
+<td style="text-align: center;">GPIO6</td>
+<td style="text-align: center;">주황</td>
 </tr>
 <tr>
-<td>SCL</td>
-<td>GPIO7</td>
+<td style="text-align: center;">SCL</td>
+<td style="text-align: center;">GPIO7</td>
+<td style="text-align: center;">파랑</td>
 </tr>
 </tbody>
 </table>
@@ -1065,7 +1070,7 @@ I2C통신은 같은 핀으로 모듈마다 다른 주소를 활용해 다수의 
 <p><strong>I2C 핀 선택 이유</strong>: GPIO8/9는 스트래핑 핀이라 I2C로 쓸 수 없습니다. GPIO4/5는 UART와 충돌 가능성이 있어서, 안전한 <strong>GPIO6/7을 SDA/SCL</strong>로 지정했습니다.</p>
 </blockquote>
 <hr />
-<h2 id="_3">라이브러리 설치</h2>
+<h2 id="_2">라이브러리 설치</h2>
 <p>**아두이노IDE Tools → Manage Libraries →</p>
 <ol>
 <li><code>Adafruit BME280 Library</code> 검색 → 설치</li>
@@ -1136,7 +1141,7 @@ I2C통신은 같은 핀으로 모듈마다 다른 주소를 활용해 다수의 
 <span class="p">}</span>
 </code></pre></div>
 </details>
-<h2 id="_4">짜잔~! 드디어 데이터를 읽었습니다! 👏 🎉 👍</h2>
+<h2 id="_3">짜잔~! 드디어 데이터를 읽었습니다! 👏 🎉 👍</h2>
 <div class="highlight"><pre><span></span><code>&gt; 아두이노IDE 시리얼모니터(115200)
 BME280 연결 성공!
 ----------
@@ -1304,7 +1309,7 @@ DHT11은 온습도 차이가 크고 기압을 측정할 수 없어서 기상관�
     <span class="md-icon" title="마지막 업데이트">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 13일 12:58:40 UTC">2026-09-13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 13일 13:21:48 UTC">2026-09-13</span>
   </span>
 
     
