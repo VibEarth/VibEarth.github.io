@@ -553,17 +553,6 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         라이브러리 설치
       
     </span>
@@ -572,7 +561,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         예제 코드로 동작 확인
@@ -780,17 +769,6 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         라이브러리 설치
       
     </span>
@@ -799,7 +777,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         예제 코드로 동작 확인
@@ -828,6 +806,13 @@
 
 <h1 id="esp32-project-c3-supermini-096-oled-display">ESP32 Project - C3 SuperMini - 0.96" OLED Display</h1>
 <h2 id="oled-tft-lcd">왜 OLED인가? — TFT LCD와의 비교</h2>
+<blockquote>
+<p>기상관측드론에 장착할 센서 패키지는 작고 가벼워야 합니다. OLED는 LCD 대비 절반 이하의 크기로 동일한(혹은 더 풍부한) 정보를 표시할 수 있어, 드론 탑재 기상관측기의 디스플레이로 최적입니다. </p>
+</blockquote>
+<details class="tips">
+<summary>디스플레이, 필수가 아니라 선택입니다.</summary>
+<p>사실, 이 프로젝트에서 만드는 웹서버 기상관측기는 디스플레이가 없어도 됩니다. 스마트폰이 디스플레이 역할을 할 수 있으니까요. 그래서 프로토타입에는 디스플레이가 없었는데 바이브메이킹 입문자 입장에서는 가시적으로 센서값이 바로 눈에 보이는 것이 의미있다고 생각하여 추가했습니다. 디스플레이가 필요 없으며 건너뛰셔도 좋습니다.</p>
+</details>
 <p>BME280 센서의 측정값을 출력할 디스플레이를 선택할 때, 가장 흔히 사용되는 <strong>16×2 LCD</strong>와 <strong>0.96" 128x64 OLED</strong>를 비교해보겠습니다.</p>
 <p><img alt="oled_display.png" src="../../../assets/oled/oled_display.png" /></p>
 <p><small>Table 1. 16×2 LCD vs 0.96" 128x64 OLED 비교</small></p>
@@ -878,9 +863,6 @@
 </tbody>
 </table>
 <p>OLED는 픽셀 하나하나가 스스로 빛을 내기 때문에 백라이트가 필요 없고, <strong>ESP32-C3 SuperMini, BME280 센서와 함께 손바닥 만한 400홀 브레드보드에 장착하기 딱 좋습니다.</strong></p>
-<blockquote>
-<p>기상관측드론에 장착할 센서 패키지는 작고 가벼워야 합니다. OLED는 LCD 대비 절반 이하의 크기로 동일한(혹은 더 풍부한) 정보를 표시할 수 있어, 드론 탑재 기상관측기의 디스플레이로 최적입니다.</p>
-</blockquote>
 <hr />
 <h2 id="i2c">I2C의 장점 — 배선 추가가 이렇게 단순해도 되나?</h2>
 <p>BME280에 이어 OLED도 <strong>I2C 통신</strong>을 사용합니다. I2C의 핵심은 <strong>하나의 버스(SDA/SCL 2선)에 여러 장치를 동시에 연결</strong>할 수 있다는 점입니다.</p>
@@ -923,12 +905,13 @@
 <blockquote>
 <p>⚠️ ESP32-C3의 I2C 핀을 GPIO6/7로 BME280과 동일하게 연결합니다.</p>
 </blockquote>
-<h2 id="_1"><img alt="oled-wiring.png" src="../../../assets/oled/oled-wiring.png" /></h2>
-<h2 id="_2">라이브러리 설치</h2>
+<p><img alt="oled-wiring.png" src="../../../assets/oled/oled-wiring.png" /></p>
+<hr />
+<h2 id="_1">라이브러리 설치</h2>
 <p><strong>Tools → Manage Libraries → <code>SSD1306</code> 검색 → Adafruit SSD1306 → Install</strong></p>
 <p>의존 라이브러리 설치 팝업이 뜨면 <strong>Install All</strong> 선택합니다.</p>
 <hr />
-<h2 id="_3">예제 코드로 동작 확인</h2>
+<h2 id="_2">예제 코드로 동작 확인</h2>
 <p><strong>File → Examples → Adafruit SSD1306 → <code>ssd1306_128x64_i2c</code></strong> 열기</p>
 <p>수정 없이 업로드하면 Adafruit 로고와 도형 애니메이션이 출력됩니다.</p>
 <hr />
@@ -968,7 +951,7 @@
     <span class="md-icon" title="마지막 업데이트">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 13일 13:24:18 UTC">2026-09-13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 13일 13:41:04 UTC">2026-09-13</span>
   </span>
 
     
