@@ -1,1 +1,128 @@
-test
+# 0.96" OLED Display
+
+## 왜 OLED인가? — TFT LCD와의 비교
+
+BME280 센서의 측정값을 출력할 디스플레이를 선택할 때, 가장 흔히 사용되는 **16×2 LCD**와 **0.96" OLED**를 비교해보겠습니다.
+
+<small>Table 1. 16×2 LCD vs 0.96" OLED 비교</small>
+
+|      항목       |     16×2 LCD      |       0.96" OLED        |
+| :-----------: | :---------------: | :---------------------: |
+|     해상도      | 16자 × 2줄 (문자만) | 128×32 픽셀 (그래픽 가능) |
+|    통신 방식    |  병렬(8핀) 또는 I2C  |      **I2C (2핀)**       |
+|     배선 수     |      최소 6~8핀      | **VCC, GND, SDA, SCL — 4핀** |
+|      크기       |     80×36mm      |      **25×27mm**        |
+|    백라이트     |  필요 (전력 소모↑)   |  **자체 발광 (백라이트 불필요)**  |
+|      가격       |     약 2,000원~     |       약 2,500원~        |
+|    가독성      |        보통         |   **명암비 높아 선명**    |
+
+OLED는 픽셀 하나하나가 스스로 빛을 내기 때문에 백라이트가 필요 없고, **ESP32-C3 SuperMini와 함께 놓으면 손바닥 안에 들어올 정도로 작습니다.**
+
+> 기상관측드론에 장착할 센서 패키지는 작고 가벼워야 합니다. OLED는 LCD 대비 절반 이하의 크기로 동일한(혹은 더 풍부한) 정보를 표시할 수 있어, 드론 탑재 기상관측기의 디스플레이로 최적입니다.
+
+---
+
+## I2C의 장점 — 배선이 이렇게 단순해도 되나?
+
+BME280에 이어 OLED도 **I2C 통신**을 사용합니다. I2C의 핵심은 **하나의 버스(SDA/SCL 2선)에 여러 장치를 동시에 연결**할 수 있다는 점입니다.
+
+```
+ESP32-C3
+   │
+   ├── SDA ──┬── BME280 (0x76)
+   │         └── OLED   (0x3C)
+   │
+   └── SCL ──┬── BME280
+              └── OLED
+```
+
+BME280과 OLED를 **같은 SDA/SCL 핀에 병렬로 연결**하면, 나중에 두 센서값을 OLED에 바로 출력할 수 있습니다. 배선 추가 없이 소프트웨어만 바꾸면 됩니다.
+
+---
+
+## 연결 (Wiring)
+
+<small>Table 2. OLED → ESP32-C3 SuperMini 핀 연결</small>
+
+| OLED 핀 | ESP32-C3 핀 |  색상 (관례)  |
+| :-----: | :---------: | :---------: |
+|   VCC   |    3.3V     |     빨강     |
+|   GND   |     GND     |     검정     |
+|   SDA   |   GPIO6    |     파랑     |
+|   SCL   |   GPIO7    |     주황     |
+
+> ⚠️ ESP32-C3의 I2C 핀은 `Wire.begin(SDA, SCL)`로 직접 지정해야 합니다. GPIO8/9는 스트래핑 핀이므로 I2C에 사용하지 마세요.
+
+![[oled-wiring.png]]
+
+---
+
+## 라이브러리 설치
+
+**Tools → Manage Libraries → `SSD1306` 검색 → Adafruit SSD1306 → Install**
+
+의존 라이브러리 설치 팝업이 뜨면 **Install All** 선택합니다.
+
+![[oled-library.png]]
+
+---
+
+## 예제 코드로 동작 확인
+
+**File → Examples → Adafruit SSD1306 → `ssd1306_128x32_i2c`** 열기
+
+> 128×**64** 예제가 아니라 **128×32** 예제를 열어야 합니다. 해상도가 다르면 화면이 잘리거나 출력이 안 됩니다.
+
+수정 없이 업로드하면 Adafruit 로고와 도형 애니메이션이 출력됩니다.
+
+![[oled-example.png]]
+
+---
+
+## Hello, OLED 🜨
+
+```cpp
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 32
+#define OLED_RESET -1
+#define SCREEN_ADDRESS 0x3C
+
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+void setup() {
+  Wire.begin(6, 7); // SDA, SCL
+  display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS);
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(0, 0);
+  display.println("Hello, VibEarth!");
+  display.println("OLED OK");
+  display.display();
+}
+
+void loop() {}
+```
+
+---
+
+<div style="display: flex; justify-content: space-between; margin-top: 3rem; border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: 1rem;">
+  <a href="/esp32/c3/led" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem;">
+    <span style="font-size: 1.2rem;">←</span>
+    <div>
+      <div style="color: var(--md-default-fg-color--light); font-size: 0.7rem;">이전</div>
+      <div>Hello, LED💡</div>
+    </div>
+  </a>
+  <a href="/esp32/c3/bme280" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem; text-align: right;">
+    <div>
+      <div style="color: var(--md-default-fg-color--light); font-size: 0.7rem;">다음</div>
+      <div>BME280 sensor</div>
+    </div>
+    <span style="font-size: 1.2rem;">→</span>
+  </a>
+</div>
