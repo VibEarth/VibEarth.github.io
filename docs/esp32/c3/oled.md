@@ -4,6 +4,8 @@
 
 BME280 센서의 측정값을 출력할 디스플레이를 선택할 때, 가장 흔히 사용되는 **16×2 LCD**와 **0.96" 128x64 OLED**를 비교해보겠습니다.
 
+![[oled display 사진]]
+
 <small>Table 1. 16×2 LCD vs 0.96" 128x64 OLED 비교</small>
 
 |      항목       |     16×2 LCD      |       0.96" OLED        |
@@ -36,14 +38,14 @@ BME280과 OLED를 **같은 SDA/SCL 핀에 병렬로 연결**하면, 나중에 �
 
 <small>Table 2. OLED → ESP32-C3 SuperMini 핀 연결</small>
 
-| OLED 핀 | ESP32-C3 핀 |  색상 (관례)  |
+| OLED 핀 | ESP32-C3 핀 |  색상  |
 | :-----: | :---------: | :---------: |
 |   VCC   |    3.3V     |     빨강     |
 |   GND   |     GND     |     검정     |
-|   SDA   |   GPIO6    |     파랑     |
-|   SCL   |   GPIO7    |     주황     |
+|   SDA   |   GPIO6    |     주황     |
+|   SCL   |   GPIO7    |     파랑     |
 
-> ⚠️ ESP32-C3의 I2C 핀은 `Wire.begin(SDA, SCL)`로 직접 지정해야 합니다. GPIO8/9는 스트래핑 핀이므로 I2C에 사용하지 마세요.
+> ⚠️ ESP32-C3의 I2C 핀을 GPIO6/7로 BME280과 동일하게 연결합니다.스트래핑 핀이므로 I2C에 사용하지 마세요.
 
 ![[oled-wiring.png]]
 
@@ -54,8 +56,6 @@ BME280과 OLED를 **같은 SDA/SCL 핀에 병렬로 연결**하면, 나중에 �
 **Tools → Manage Libraries → `SSD1306` 검색 → Adafruit SSD1306 → Install**
 
 의존 라이브러리 설치 팝업이 뜨면 **Install All** 선택합니다.
-
-![[oled-library.png]]
 
 ---
 
