@@ -147,7 +147,7 @@ LED 하나를 깜빡이는 게 전부였지만, 여기서 처음으로 바이브
     <span style="font-size: 1.2rem;">←</span>
     <div>
       <div style="color: var(--md-default-fg-color--light); font-size: 0.7rem;">이전</div>
-      <div>intro</div>
+      <div>Settings</div>
     </div>
   </a>
   <a href="/esp32/c3/led" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem; text-align: right;">
