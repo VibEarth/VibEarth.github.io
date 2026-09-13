@@ -18,7 +18,6 @@ theme:
   features:
     - navigation.instant
     - navigation.top
-    - navigation.footer
     
 markdown_extensions:
   - admonition
