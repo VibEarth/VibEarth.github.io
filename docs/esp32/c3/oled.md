@@ -34,7 +34,7 @@ BME280과 OLED를 **같은 SDA/SCL 핀에 병렬로 연결**하면, 나중에 �
 
 ---
 
-## 연결 (Wiring)
+## 배선 연결 (wiring)
 
 <small>Table 2. OLED → ESP32-C3 SuperMini 핀 연결</small>
 
@@ -48,7 +48,6 @@ BME280과 OLED를 **같은 SDA/SCL 핀에 병렬로 연결**하면, 나중에 �
 > ⚠️ ESP32-C3의 I2C 핀을 GPIO6/7로 BME280과 동일하게 연결합니다.
 
 ![[oled-wiring.png]]
-
 ---
 
 ## 라이브러리 설치
