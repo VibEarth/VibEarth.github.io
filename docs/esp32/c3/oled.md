@@ -118,10 +118,10 @@ void loop() {}
       <div>BME280 sensor</div>
     </div>
   </a>
-  <a href="/esp32/c3/bme280" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem; text-align: right;">
+  <a href="/esp32/c3/wifi_webserver" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem; text-align: right;">
     <div>
       <div style="color: var(--md-default-fg-color--light); font-size: 0.7rem;">다음</div>
-      <div>BME280 sensor</div>
+      <div>WiFi webserver 🖥️</div>
     </div>
     <span style="font-size: 1.2rem;">→</span>
   </a>
