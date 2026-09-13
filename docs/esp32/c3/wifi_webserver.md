@@ -183,3 +183,20 @@ Web UI  : http://192.168.4.1
 
 ??? "힌트" 
 	`webUiBegin()` 함수 안에 비밀번호 길이를 확인하는 분기가 있습니다. 비밀번호가 8자 미만이면 어떻게 동작하는지 코드를 읽어보세요.
+
+<div style="display: flex; justify-content: space-between; margin-top: 3rem; border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: 1rem;">
+  <a href="/esp32/c3/bme280" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem;">
+    <span style="font-size: 1.2rem;">←</span>
+    <div>
+      <div style="color: var(--md-default-fg-color--light); font-size: 0.7rem;">이전</div>
+      <div>BME280 sensor</div>
+    </div>
+  </a>
+  <a href="" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem; text-align: right;">
+    <div>
+      <div style="color: var(--md-default-fg-color--light); font-size: 0.7rem;">다음</div>
+      <div></div>
+    </div>
+    <span style="font-size: 1.2rem;">→</span>
+  </a>
+</div>
