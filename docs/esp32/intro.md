@@ -56,6 +56,6 @@ C3보다 성능이 우위인 S3로 ESP32의 성능을 최대한 활용하는 ESP
 
 ---
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/index.md">← 홈으로</a>
+  <a href="/docs/index.md">← 홈으로</a>
   <a href="/docs/esp32/c3/settings.md">다음: ESP32-C3 SuperMini →</a>
 </div>
