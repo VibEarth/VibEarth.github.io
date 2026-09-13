@@ -1,4 +1,4 @@
-# 0.96" OLED Display
+# ESP32 Project - C3 SuperMini - 0.96" OLED Display
 
 ## 왜 OLED인가? — TFT LCD와의 비교
 
