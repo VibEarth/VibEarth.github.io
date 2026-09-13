@@ -109,7 +109,7 @@ SuperMini의 BOOT 버튼(GPIO9)은 업로드 모드 진입 용도이지만, 펌�
 **예제 3 프롬프트** 
 - "ESP32-C3 SuperMini의 BOOT 버튼(GPIO9)을 누르면 내장 LED(GPIO8)가 켜지고, 떼면 꺼지는 코드를 작성해줘"
 
-??? example "코드보기"
+??? tips "코드 보기"
 
 	```cpp
 	int led = 8;
