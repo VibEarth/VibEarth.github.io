@@ -10,15 +10,20 @@
 
 아두이노 IDE 설치는 [공식 다운로드 페이지](https://www.arduino.cc/en/software/)를 따라가시면 됩니다. 윈도우와 맥os 버전 모두 있습니다.
 
-아두이노 IDE의 보드매니저에서 ESP32를 검색하면 비슷한 이름이 여러 개 뜹니다.
+아두이노 IDE의 [Tools-Boards-보드매니저]메뉴에서 ESP32를 검색하고 ESP32 by Espressif를 설치해주세요.
+
+??? tips "연수진행하면서 설치가 꽤 오래걸려서 놀랐습니다."
+    한번만 설치하면되는데 ESP32보드 종류가 너무 많아서 오래 걸리나 봅니다. 실습수엊을 하실때 설치 중 간단한 이론 설명이나 배선도 설명으로 시간배분을 해주세요.
+
+설치완료되면 [Tools-Boards-esp32]에 비슷한 이름의 ESP32 보드이름이 아주 많이 뜹니다.
 
 - `ESP32C3 Dev Module`
 - `ESP32-C3-DevKitM-1`
 - `MakerGo ESP32 C3 SuperMini`
 - 그 외 변형들
 
-> 가장 범용적으로 쓰이는 `ESP32C3 Dev Module`을 선택하시면 됩니다.
-> `MakerGo sESP32 C3 SuperMini`를 선택하면 기본핀 설정이 되어있는데 보드매니저에서 찾는 시간이 너무 오래 걸립니다.
+??? tips "`ESP32C3 Dev Module`을 선택하시면 됩니다."
+    `ESP32C3 Dev Module`는 가장 범용적으로 쓸 수 있는 유형입니다. `MakerGo ESP32 C3 SuperMini`를 선택하면 기본핀 설정이 되어있는데 스크롤을 너무 많이 내려야해서 찾는 시간이 너무 오래 걸립니다.
 
 
 ---
