@@ -143,7 +143,7 @@ LED 하나를 깜빡이는 게 전부였지만, 여기서 처음으로 바이브
 </blockquote>
 
 <div style="display: flex; justify-content: space-between; margin-top: 3rem; border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: 1rem;">
-  <a href="/esp32/intro" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem;">
+  <a href="/esp32/c3/settings" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem;">
     <span style="font-size: 1.2rem;">←</span>
     <div>
       <div style="color: var(--md-default-fg-color--light); font-size: 0.7rem;">이전</div>
