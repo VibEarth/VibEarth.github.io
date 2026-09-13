@@ -677,17 +677,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#hello-oled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hello, OLED 🜨
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -800,7 +789,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>⚠️ ESP32-C3의 I2C 핀을 GPIO6/7로 BME280과 동일하게 연결합니다.스트래핑 핀이므로 I2C에 사용하지 마세요.</p>
+<p>⚠️ ESP32-C3의 I2C 핀을 GPIO6/7로 BME280과 동일하게 연결합니다.</p>
 </blockquote>
 <p>![[oled-wiring.png]]</p>
 <hr />
@@ -809,39 +798,8 @@
 <p>의존 라이브러리 설치 팝업이 뜨면 <strong>Install All</strong> 선택합니다.</p>
 <hr />
 <h2 id="_2">예제 코드로 동작 확인</h2>
-<p><strong>File → Examples → Adafruit SSD1306 → <code>ssd1306_128x32_i2c</code></strong> 열기</p>
-<blockquote>
-<p>128×<strong>64</strong> 예제가 아니라 <strong>128×32</strong> 예제를 열어야 합니다. 해상도가 다르면 화면이 잘리거나 출력이 안 됩니다.</p>
-</blockquote>
+<p><strong>File → Examples → Adafruit SSD1306 → <code>ssd1306_128x64_i2c</code></strong> 열기</p>
 <p>수정 없이 업로드하면 Adafruit 로고와 도형 애니메이션이 출력됩니다.</p>
-<p>![[oled-example.png]]</p>
-<hr />
-<h2 id="hello-oled">Hello, OLED 🜨</h2>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Wire.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Adafruit_GFX.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Adafruit_SSD1306.h&gt;</span>
-
-<span class="cp">#define SCREEN_WIDTH 128</span>
-<span class="cp">#define SCREEN_HEIGHT 32</span>
-<span class="cp">#define OLED_RESET -1</span>
-<span class="cp">#define SCREEN_ADDRESS 0x3C</span>
-
-<span class="n">Adafruit_SSD1306</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="n">SCREEN_WIDTH</span><span class="p">,</span><span class="w"> </span><span class="n">SCREEN_HEIGHT</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">Wire</span><span class="p">,</span><span class="w"> </span><span class="n">OLED_RESET</span><span class="p">);</span>
-
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">Wire</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">);</span><span class="w"> </span><span class="c1">// SDA, SCL</span>
-<span class="w">  </span><span class="n">display</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">SSD1306_SWITCHCAPVCC</span><span class="p">,</span><span class="w"> </span><span class="n">SCREEN_ADDRESS</span><span class="p">);</span>
-<span class="w">  </span><span class="n">display</span><span class="p">.</span><span class="n">clearDisplay</span><span class="p">();</span>
-<span class="w">  </span><span class="n">display</span><span class="p">.</span><span class="n">setTextSize</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<span class="w">  </span><span class="n">display</span><span class="p">.</span><span class="n">setTextColor</span><span class="p">(</span><span class="n">SSD1306_WHITE</span><span class="p">);</span>
-<span class="w">  </span><span class="n">display</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
-<span class="w">  </span><span class="n">display</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Hello, VibEarth!"</span><span class="p">);</span>
-<span class="w">  </span><span class="n">display</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"OLED OK"</span><span class="p">);</span>
-<span class="w">  </span><span class="n">display</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>
-<span class="p">}</span>
-
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
-</code></pre></div>
 <hr />
 <div style="display: flex; justify-content: space-between; margin-top: 3rem; border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: 1rem;">
   <a href="/esp32/c3/bme280" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem;">
@@ -879,7 +837,7 @@
     <span class="md-icon" title="마지막 업데이트">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 13일 12:57:17 UTC">2026-09-13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 13일 13:00:47 UTC">2026-09-13</span>
   </span>
 
     
