@@ -71,7 +71,7 @@ AI 함께 핀설정을 수정하여 업로드하면 Adafruit 로고와 도형 �
 
 > 예시 프롬프트: "ESP32C3 supermini 보드에 gpio6 sda, gpio7 scl을 0.96" OLED 디스플레이에 연결했어. 'ssd1306_128x64_i2c' 예제 코드가 작동되게 하고 싶어."
 
-!!! tips "ssd1306_128x64_i2c.ino 코드 수정본"
+??? tips "ssd1306_128x64_i2c.ino 코드 수정본"
     예제 코드가 600여 줄로 길어서 파일로 첨부합니다.
     [ssd1306_128x64_i2c.ino](/assets/oled/ssd1306_128x64_i2c.ino)
 
@@ -87,7 +87,7 @@ AI 함께 핀설정을 수정하여 업로드하면 Adafruit 로고와 도형 �
 
 ![[bme280_oled.png]]
 
-!!! tips "esp32c3_bme280_oled.ino 예시 코드"
+??? tips "esp32c3_bme280_oled.ino 예시 코드"
     예제 코드가 300여 줄로 길어서 파일로 첨부합니다.
     [esp32c3_bme280_oled.ino](/assets/oled/esp32c3_bme280_oled.ino)
 
