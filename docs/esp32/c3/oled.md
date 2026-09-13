@@ -77,15 +77,19 @@ AI 함께 핀설정을 수정하여 업로드하면 Adafruit 로고와 도형 �
 
 ---
 
-## Vibe Making으로 더 해보며 정리하기🜨
+## Vibe Making으로 정리하기🜨
 
 기본 예제가 동작했다면, 이제 AI와 좀 더 대화하며 직접 실습해보세요.
 
 **ESP32C3 SuperMini + BME280 + OLED display 통합하기**
 
-> 예시 프롬프트: "BME280 예제 코드에 동일한 I2C핀(gpio6 sda, gpio7 scl)에 0.96" OLED 디스플레이를 연결해서 측정값을 출력하고 싶어. BME280 예제코드를 업로드 할게 수정해줘."
+> 예시 프롬프트: "BME280와 동일한 I2C핀(gpio6 sda, gpio7 scl)에 0.96" OLED 디스플레이를 연결해서 측정값을 출력하고 싶어. BME280 예제코드를 업로드 할게 수정해줘."
 
 ![[bme280_oled.png]]
+
+!!! tips "esp32c3_bme280_oled.ino 예시 코드"
+    예제 코드가 300여 줄로 길어서 파일로 첨부합니다.
+    [esp32c3_bme280_oled.ino](/assets/oled/esp32c3_bme280_oled.ino)
 
 <div style="display: flex; justify-content: space-between; margin-top: 3rem; border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: 1rem;">
   <a href="/esp32/c3/bme280" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem;">
