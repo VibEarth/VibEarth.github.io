@@ -93,7 +93,19 @@ SuperMini C3에는 작은 버튼 두 개가 있습니다 — BOOT(빨간색)와 
 기본설정 내용은 대강 훑어보고 나중에 막히면 다시 찾아올 수 있도록 구성해보았습니다.
 다시 읽을 일이 없으시길 바라겠습니다🜨
 
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/esp32/intro">← 이전: intro</a>
-  <a href="/esp32/c3/led">다음: Hello, LED💡 →</a>
+<div style="display: flex; justify-content: space-between; margin-top: 3rem; border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: 1rem;">
+  <a href="/esp32/intro" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem;">
+    <span style="font-size: 1.2rem;">←</span>
+    <div>
+      <div style="color: var(--md-default-fg-color--light); font-size: 0.7rem;">이전</div>
+      <div>intro</div>
+    </div>
+  </a>
+  <a href="/esp32/c3/led" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem; text-align: right;">
+    <div>
+      <div style="color: var(--md-default-fg-color--light); font-size: 0.7rem;">다음</div>
+      <div>Hello, LED💡</div>
+    </div>
+    <span style="font-size: 1.2rem;">→</span>
+  </a>
 </div>
