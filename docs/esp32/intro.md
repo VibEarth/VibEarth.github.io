@@ -54,7 +54,6 @@ C3보다 성능이 우위인 S3로 ESP32의 성능을 최대한 활용하는 ESP
 앞으로 SuperMini C3로 ESP32 MBL 기본기를 다지는 과정을 먼저 소개하고,
 이후 XIAO S3로 옮겨 드론에 장착하는 과정을 이어서 포스팅하겠습니다🜨
 
----
 <div style="display: flex; justify-content: space-between; margin-top: 3rem; border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: 1rem;">
   <a href="/" style="display: flex; align-items: center; gap: 0.5rem; color: var(--md-primary-fg-color); text-decoration: none; font-size: 0.85rem;">
     <span style="font-size: 1.2rem;">←</span>
