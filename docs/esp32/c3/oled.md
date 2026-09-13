@@ -4,7 +4,7 @@
 
 BME280 센서의 측정값을 출력할 디스플레이를 선택할 때, 가장 흔히 사용되는 **16×2 LCD**와 **0.96" 128x64 OLED**를 비교해보겠습니다.
 
-![[oled display 사진]]
+![[oled_display.png]]
 
 <small>Table 1. 16×2 LCD vs 0.96" 128x64 OLED 비교</small>
 
