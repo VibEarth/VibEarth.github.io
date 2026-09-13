@@ -94,6 +94,6 @@ SuperMini C3에는 작은 버튼 두 개가 있습니다 — BOOT(빨간색)와 
 다시 읽을 일이 없으시길 바라겠습니다🜨
 
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/docs/esp32/intro.md">← 이전: intro</a>
+  <a href="../intro.md">← 이전: intro</a>
   <a href="./led.md">다음: Hello, LED💡 →</a>
 </div>
