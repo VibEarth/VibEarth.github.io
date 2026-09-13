@@ -45,7 +45,7 @@ BME280과 OLED를 **같은 SDA/SCL 핀에 병렬로 연결**하면, 나중에 �
 |   SDA   |   GPIO6    |     주황     |
 |   SCL   |   GPIO7    |     파랑     |
 
-> ⚠️ ESP32-C3의 I2C 핀을 GPIO6/7로 BME280과 동일하게 연결합니다.스트래핑 핀이므로 I2C에 사용하지 마세요.
+> ⚠️ ESP32-C3의 I2C 핀을 GPIO6/7로 BME280과 동일하게 연결합니다.
 
 ![[oled-wiring.png]]
 
@@ -61,44 +61,9 @@ BME280과 OLED를 **같은 SDA/SCL 핀에 병렬로 연결**하면, 나중에 �
 
 ## 예제 코드로 동작 확인
 
-**File → Examples → Adafruit SSD1306 → `ssd1306_128x32_i2c`** 열기
-
-> 128×**64** 예제가 아니라 **128×32** 예제를 열어야 합니다. 해상도가 다르면 화면이 잘리거나 출력이 안 됩니다.
+**File → Examples → Adafruit SSD1306 → `ssd1306_128x64_i2c`** 열기
 
 수정 없이 업로드하면 Adafruit 로고와 도형 애니메이션이 출력됩니다.
-
-![[oled-example.png]]
-
----
-
-## Hello, OLED 🜨
-
-```cpp
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
-
-#define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 32
-#define OLED_RESET -1
-#define SCREEN_ADDRESS 0x3C
-
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
-
-void setup() {
-  Wire.begin(6, 7); // SDA, SCL
-  display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS);
-  display.clearDisplay();
-  display.setTextSize(1);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(0, 0);
-  display.println("Hello, VibEarth!");
-  display.println("OLED OK");
-  display.display();
-}
-
-void loop() {}
-```
 
 ---
 
