@@ -52,7 +52,7 @@
 SuperMini C3에는 작은 버튼 두 개가 있습니다 — BOOT(빨간색)와 RESET(파란색)
 
 
-![alt text](../assets/esp32/C3supermini.png)
+![alt text](./docs/assets/esp32/C3supermini.png)
 
 
 ??? example "수동 업로드(부트) 모드 진입 순서"
