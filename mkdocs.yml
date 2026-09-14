@@ -53,7 +53,7 @@ nav:
       - Hello,LED: esp32/c3/led.md
       - BME280 sensor: esp32/c3/bme280.md
       - OLED display: esp32/c3/oled.md
-      - WiFi webserver: esp32/c3/wifi_webserver.md
+      - WiFi webserver: esp32/c3/wifiwebserver.md
     - Appendix: 
       - A. Sensors Comparison: esp32/c3/appendix_A.md
       # - Modules:
