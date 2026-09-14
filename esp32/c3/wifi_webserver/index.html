@@ -957,24 +957,23 @@ AI에게 진 것 같아서 부끄럽고 화가 날 것 같다가, 이거 더 발
 <blockquote>
 <p>BME280으로 온도, 습도, 기압을 읽는 것까지는 됐는데, 시리얼모니터는 컴퓨터에 연결된 상태에서만 볼 수 있습니다. 이번엔 ESP32를 WiFi 웹서버로 만들어서 스마트폰으로 실시간 데이터를 볼 수 있게 합니다.</p>
 </blockquote>
-<p>이제 하드웨어는 모두 연결되었습니다. ESP32 웹서버 기상관측기를 만들 준비가 다 된 것입니다.
-그동안 시리얼모니터와 OLED 디스플레이로 출력했던 데이터를 웹페이지에 표시하는 웹서버를 만들어보겠습니다.
-<strong>ESP32에는 WiFi가 내장되어 있어서 공유기에 접속할 수도 있고, 스스로 공유기 역할을 하는 웹서버가 될 수도 있습니다.</strong></p>
-<p>아래는 스마트폰으로 ESP32 웹서버 기상관측기의 페이지에 접속한 화면입니다.
-AP모드인 ESP32 웹서버에 WiFi로 접속하고 <code>http://192.168.4.1</code> 에 들어가면, 
-데이터 카드 4개(온도, 습도, 기압, 고도)와 그래프 2개(온도/습도, 기압/고도)가 실시간으로 측정되어 표시됩니다.</p>
-<p><img alt="esp32_webserver_1.jpg" src="../../../assets/webserver/esp32_webserver_1.jpg" />
-<img alt="esp32_webserver_2.jpg" src="../../../assets/webserver/esp32_webserver_2.jpg" /></p>
+<p>이제 하드웨어는 모두 연결되었습니다. ESP32 웹서버 기상관측기를 만들 준비가 다 된 것입니다.</p>
+<p>그동안 시리얼모니터와 OLED 디스플레이로 출력했던 데이터를 웹페이지에 표시하는 웹서버를 만들어보겠습니다.</p>
+<p><strong>ESP32에는 WiFi가 내장되어 있어서 공유기에 접속할 수도 있고, 스스로 공유기 역할을 하는 웹서버가 될 수도 있습니다.</strong></p>
+<p>아래는 스마트폰으로 ESP32 웹서버 기상관측기의 페이지에 접속한 화면입니다.</p>
+<p>AP모드인 ESP32 웹서버에 WiFi로 접속하고 <code>http://192.168.4.1</code> 에 들어가면, 데이터 카드 4개(온도, 습도, 기압, 고도)와 그래프 2개(온도/습도, 기압/고도)가 실시간으로 측정되어 표시됩니다.</p>
+<p><img alt="esp32_webserver_1.jpg" src="../../../assets/webserver/esp32_webserver_1.jpg" /></p>
+<p><img alt="esp32_webserver_2.jpg" src="../../../assets/webserver/esp32_webserver_2.jpg" /></p>
 <h2 id="bme280-wifi">BME280 + WiFi 웹서버 코드 만들기</h2>
 <blockquote>
 <p>원래는 이 포스팅에서 바로 코드를 보여드리려고 했었는데, 바이브어스에 걸맞게 순서를 조금 바꿔보겠습니다. 바이브메이킹으로 ESP32 웹서버 기상관측기 만들기를 먼저 시도해보시고, 저는 어떻게 만들었을지 궁금하신 분들만 코드를 참고해주세요.</p>
 </blockquote>
-<p>예시 프롬프트: ESP32-C3 SuperMini에 BME280이 I2C(SDA GPIO6, SCL GPIO7)로 연결되어 있어. 0.96인치 OLED 디스플레이와 시리얼모니터, 플로터로 센서값을 출력했어. 이게 기존 코드야(붙여넣기).
-ESP32를 Wi-Fi AP 모드로 띄우고, 스마트폰으로 접속하면 온도, 습도, 기압이 실시간 그래프로 보이는 웹서버 코드를 기존 코드를 수정해서 만들어 줘.</p>
+<p>예시 프롬프트: ESP32-C3 SuperMini에 BME280이 I2C(SDA GPIO6, SCL GPIO7)로 연결되어 있어. 0.96인치 OLED 디스플레이와 시리얼모니터, 플로터로 센서값을 출력했어. 이게 기존 코드야(붙여넣기).</p>
+<p>ESP32를 Wi-Fi AP 모드로 띄우고, 스마트폰으로 접속하면 온도, 습도, 기압이 실시간 그래프로 보이는 웹서버 코드를 기존 코드를 수정해서 만들어 줘.</p>
 <details class="tips">
 <summary>예시 프롬프트에 대한 답을 보여주는 AI 공유링크 및 QR코드</summary>
 <p><img alt="https://chatgpt.com/share/6aa7c9d2-2238-83e8-9a62-a4e5f5e069bf" src="https://chatgpt.com/share/6aa7c9d2-2238-83e8-9a62-a4e5f5e069bf" />
-<img alt="qrcode.png" src="../../../assets/webserver/qrcode.png" /></p>
+   <img alt="qrcode.png" src="../../../assets/webserver/qrcode.png" /></p>
 </details>
 <h2 id="bme280-wifi_1">BME280 + WiFi 웹서버 예제 코드</h2>
 <p>기존 bme280.ino 코드에 웹서버 기능을 전부 넣으면 금방 수백 줄이 됩니다. 역할을 분리해서 세 파일로 나눴습니다(🤖).</p>
@@ -1136,7 +1135,7 @@ Web UI  : http://192.168.4.1
     <span class="md-icon" title="마지막 업데이트">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 14일 12:39:57 UTC">2026-09-14</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 14일 12:53:20 UTC">2026-09-14</span>
   </span>
 
     
