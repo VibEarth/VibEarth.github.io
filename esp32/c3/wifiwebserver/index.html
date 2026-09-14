@@ -939,6 +939,10 @@
 
 
 <h1 id="esp32-project-c3-supermini-esp32-wifi-webserver">ESP32 Project - C3 SuperMini - ESP32 WiFi webserver</h1>
+<h2 id="esp32">ESP32, 세상에서 가장 작은 웹서버 기상관측기가 되다. 🖥️</h2>
+<blockquote>
+<p>BME280으로 온도, 습도, 기압을 읽는 것까지는 됐는데, 시리얼모니터는 컴퓨터에 연결된 상태에서만 볼 수 있습니다. 이번엔 ESP32를 WiFi 웹서버로 만들어서 스마트폰으로 실시간 데이터를 볼 수 있게 합니다.</p>
+</blockquote>
 <details class="note">
 <summary>지극히 개인적인 웹페이지 제작 스토리 📝</summary>
 <p>어렸을 적, 컴퓨터를 좋아했던 저는 언젠가 나만의 홈페이지를 만들어보고 싶다는 생각을 했습니다.<br />
@@ -953,10 +957,6 @@
 AI에게 진 것 같아서 부끄럽고 화가 날 것 같다가, 이거 더 발전시키면 어떻게 될까, 궁금해집니다.<br />
 이제부터 보여드리겠습니다🜨</p>
 </details>
-<h2 id="esp32">ESP32, 세상에서 가장 작은 웹서버 기상관측기가 되다. 🖥️</h2>
-<blockquote>
-<p>BME280으로 온도, 습도, 기압을 읽는 것까지는 됐는데, 시리얼모니터는 컴퓨터에 연결된 상태에서만 볼 수 있습니다. 이번엔 ESP32를 WiFi 웹서버로 만들어서 스마트폰으로 실시간 데이터를 볼 수 있게 합니다.</p>
-</blockquote>
 <p>이제 하드웨어는 모두 연결되었습니다. ESP32 웹서버 기상관측기를 만들 준비가 다 된 것입니다.</p>
 <p>그동안 시리얼모니터와 OLED 디스플레이로 출력했던 데이터를 웹페이지에 표시하는 웹서버를 만들어보겠습니다.</p>
 <p><strong>ESP32에는 WiFi가 내장되어 있어서 공유기에 접속할 수도 있고, 스스로 공유기 역할을 하는 웹서버가 될 수도 있습니다.</strong></p>
@@ -972,7 +972,7 @@ AI에게 진 것 같아서 부끄럽고 화가 날 것 같다가, 이거 더 발
 <p>ESP32를 Wi-Fi AP 모드로 띄우고, 스마트폰으로 접속하면 온도, 습도, 기압이 실시간 그래프로 보이는 웹서버 코드를 기존 코드를 수정해서 만들어 줘.</p>
 <details class="tips">
 <summary>예시 프롬프트에 대한 답을 보여주는 AI 공유링크 및 QR코드</summary>
-<p><img alt="https://chatgpt.com/share/6aa7c9d2-2238-83e8-9a62-a4e5f5e069bf" src="https://chatgpt.com/share/6aa7c9d2-2238-83e8-9a62-a4e5f5e069bf" />
+<p><a href="https://chatgpt.com/share/6aa7c9d2-2238-83e8-9a62-a4e5f5e069bf">https://chatgpt.com/share/6aa7c9d2-2238-83e8-9a62-a4e5f5e069bf</a>
    <img alt="qrcode.png" src="../../../assets/webserver/qrcode.png" /></p>
 </details>
 <h2 id="bme280-wifi_1">BME280 + WiFi 웹서버 예제 코드</h2>
@@ -1135,7 +1135,7 @@ Web UI  : http://192.168.4.1
     <span class="md-icon" title="마지막 업데이트">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 14일 12:53:20 UTC">2026-09-14</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026년 9월 14일 13:28:58 UTC">2026-09-14</span>
   </span>
 
     
